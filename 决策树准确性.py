@@ -25,5 +25,14 @@ iris=load_iris()
 cross_val_score(clf,iris.data,iris.target,cv=10)
 
 
-apply(X[,check_input])                              he leaf that each sample is predicted as
-decision_path(X[,check_input])
+apply(X[,check_input])                        Returns the index of the leaf that each samplpe is predicted as.
+decision_path(X[,check_input])                Return the decision path in the tree
+fit(X,y[,sample_weight,check_input,...])      Build a decision tree classifier from the training set(X,y).
+fit_trainsform(X[,y])                         Fit to data,then transform it.
+get_params([deep])                            Get parameters for this estimator.
+predict(X[,check_input])                      Predict class or regression value for X
+predict_log_proba(X)                          Predict class log-probabilities of the input samples X.
+predict_proba(X[,check_input])                Predict class probabilities of the input samples X.
+score(X,y[,sampe_weight])                     Returns the mean accuracy on the given test data and labels.
+set_params(\*\*params)                        Set the parameters of this estimator
+transform(\*args,\*\*kwargs)                  DEPRECATED:Support to use estimators as features selectors will be removed in version 0.19
