@@ -1,0 +1,27 @@
+#使用sklearn可以轻松将数据集拆分为训练数据和测试数据。只需要输入train_test_split命令。
+#该函数获取输入X和y，然后返回四项内容：
+#X_train：训练输入数据
+#X_test：测试输入数据
+#y_train：训练标签
+#y_test：测试标签
+#该函数条用如下所示：
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25)
+#最后一个参数test_size是我们想用作测试数据的点所占的百分比。在上述调用中，我们使用25%的数据作为测试数据，
+#75%作为训练数据
+#在下面的测验中，使用train_test_split函数将数据集拆分为训练集和测试集，测试集的大小必须是数据总大小的20%。
+#训练集称为X_train和y_train，测试集称为X_test和y_test。
+#Reading the csv file
+import pandas as pd
+data=pd.read_csv("data.csv")
+#Splitting the data into X and y
+import numpy as n[
+X=np.array(data[["x1","x2"]])
+y=np.array(data["y"])
+#Import statement for tarin_test_split
+from sklearn.cross_validation import train_test_split
+#TODO:Use the train_test_split function to split the data into
+#training and testing sets
+#The size of the testing set should be 20% of the total size of the data.
+#Your output should contain 4 objects.
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2)
