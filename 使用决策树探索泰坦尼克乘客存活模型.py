@@ -1,6 +1,6 @@
 #Import libraries necessary for this project
 imoprt numpy as np
-import pandas as pf
+import pandas as pd
 from IPython.display imoprt display
 #Allows the use of display() for DataFrames
 
